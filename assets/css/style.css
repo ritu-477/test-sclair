@@ -157,7 +157,8 @@
     border: none;
     transition: 1s;
 }
-.buy-btn:hover{
+
+.buy-btn1:hover {
     background: var(--fc-primary-white)
 }
 
@@ -165,18 +166,62 @@
 .max_856 {
     max-width: 856px;
 }
-.about-bg{
+
+.about-bg {
     background-image: url("../images/png/about_scailer.png");
-        background-repeat: no-repeat;
-        background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-.max-w776{
+
+.max-w776 {
     max-width: 776px;
 }
-.pb-12{
+
+.pb-12 {
     padding-bottom: 12px;
 }
 
+/* .................section-4.......................... */
+.section4-bg {
+    background-image: url("../images/png/scailer-smartbg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.py-86 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+
+.input_modification {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    padding: 12px;
+    outline: none;
+    background: transparent;
+    max-width: 514px;
+    border: 1px solid var(--border-input);
+    background: var(--input-bg);
+}
+
+.copy-btn {
+    padding: 12px 24px;
+    border-radius: 10px;
+    background: var(--fc-yellow);
+    border: none;
+    transition: 1s;
+}
+.copy-btn:hover{
+    background: var(--fc-primary-white);
+}
+.max-w806{
+    max-width: 806px;
+}
+.mb-32{
+    margin-bottom: 32px;
+}
 
 
 
@@ -260,6 +305,11 @@
         padding-top: 60px;
         padding-bottom: 60px;
     }
+
+    .py-86 {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
 }
 
 @media(min-width:768px) {
@@ -270,6 +320,11 @@
     .py_100 {
         padding-top: 70px;
         padding-bottom: 70px;
+    }
+
+    .py-86 {
+        padding-top: 86px;
+        padding-bottom: 86px;
     }
 }
 

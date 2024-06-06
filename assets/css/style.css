@@ -102,7 +102,7 @@
 }
 
 .buy-btn {
-    margin-top: 35px;
+    margin-top: 32px;
     padding: 12px 24px;
     border-radius: 10px;
     background: var(--fc-yellow);
@@ -116,7 +116,65 @@
 
 .layer-absolute {
     position: absolute;
-    bottom: -20%;
+    transform: translateY(-41%);
+}
+
+/* ........................section-2............................ */
+.bg_layer1 {
+    background-image: url("../images/png/bg_layer.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.max_818 {
+    max-width: 818px;
+}
+
+.buy_nowbox {
+    max-width: 818px;
+    width: 100%;
+    padding: 40px;
+    border: 1px solid var(--fc-border-box);
+    border-radius: 20px;
+}
+
+.py_100 {
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+
+.gap_14px {
+    gap: 14px;
+}
+
+.buy-btn1 {
+    width: 256px;
+    margin-top: 32px;
+    padding: 12px 24px;
+    border-radius: 10px;
+    background: var(--fc-yellow);
+    border: none;
+    transition: 1s;
+}
+.buy-btn:hover{
+    background: var(--fc-primary-white)
+}
+
+/* ...............................section3 about */
+.max_856 {
+    max-width: 856px;
+}
+.about-bg{
+    background-image: url("../images/png/about_scailer.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+.max-w776{
+    max-width: 776px;
+}
+.pb-12{
+    padding-bottom: 12px;
 }
 
 
@@ -197,16 +255,31 @@
     .pt_60 {
         padding-top: 60px;
     }
+
+    .py_100 {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
 }
 
 @media(min-width:768px) {
     .line-h72 {
         line-height: 67px;
     }
+
+    .py_100 {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
 }
 
 @media(min-width:992px) {
     .line-h72 {
         line-height: 52px;
+    }
+
+    .py_100 {
+        padding-top: 100px;
+        padding-bottom: 100px;
     }
 }

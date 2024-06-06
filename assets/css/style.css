@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style-type: none !important;
+    text-decoration: none !important;
+}
+.font-manrope {
+    font-family: 'manrope', sans-serif;
+}
+
+.hero-bg {
+    background-image: url("../images/png/hero-bgimage.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover
+}
+
+.container_1140 {
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.gap_32{
+    gap: 32px;
+}
+.br_nav{
+    border: 1px solid var(--nav-border);
+}
+.py_26{
+    padding-top: 26px;
+    padding-bottom: 26px;
+}
+.bt_line:hover {
+    color: var(--fc-gray);
+    text-shadow: 0 0.3px .80px var(--fc-gray), 0 0.3px .80px;
+}
+
+.bt_line::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    background: var(--fc-gray);
+    width: 0%;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.bt_line:hover::after {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:991.99px) {
+    .iconbox {
+        width: 35px;
+        height: 25px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        z-index: 20;
+        cursor: pointer;
+    }
+
+    .iconbox>span {
+        width: 100%;
+        height: 3px;
+        background-color: var(--fc-primary-white);
+        border-radius: 5px;
+    }
+
+    .menulist {
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        flex-direction: column;
+        top: 0;
+        z-index: 2;
+        left: -100%;
+        transition: all 500ms linear;
+        background-color: var(--fc-navblue);
+    }
+
+    .overflowhidden {
+        overflow: hidden !important;
+    }
+
+    .cross span:nth-child(1) {
+        transform: rotate(43deg) translateY(14px);
+        transition: 300ms linear;
+        background: var(--fc-primary-white);
+        width: 27px;
+    }
+
+    .cross span:nth-child(2) {
+        transform: translateX(-100%);
+        opacity: 0;
+        transition: 0.5ms linear;
+    }
+
+    .cross span:nth-child(3) {
+        transform: rotate(-42deg) translateY(-15px);
+        transition: 300ms linear;
+        background: var(--fc-primary-white);
+        width: 27px;
+    }
+}

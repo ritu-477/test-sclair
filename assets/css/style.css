@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -6,8 +7,42 @@
     list-style-type: none !important;
     text-decoration: none !important;
 }
+
 .font-manrope {
     font-family: 'manrope', sans-serif;
+}
+
+/* line-height */
+.line-h72 {
+    line-height: 52px;
+}
+
+.line-h57 {
+    line-height: 57px;
+}
+
+.line-h48 {
+    line-height: 48px;
+}
+
+.line-h36 {
+    line-height: 36px;
+}
+
+.line-h30 {
+    line-height: 30px;
+}
+
+.line-h24 {
+    line-height: 24px;
+}
+
+.line-h21 {
+    line-height: 21px;
+}
+
+.line-h20 {
+    line-height: 20px;
 }
 
 .hero-bg {
@@ -24,16 +59,20 @@
     padding-left: 12px;
     padding-right: 12px;
 }
-.gap_32{
+
+.gap_32 {
     gap: 32px;
 }
-.br_nav{
+
+.br_nav {
     border: 1px solid var(--nav-border);
 }
-.py_26{
+
+.py_26 {
     padding-top: 26px;
     padding-bottom: 26px;
 }
+
 .bt_line:hover {
     color: var(--fc-gray);
     text-shadow: 0 0.3px .80px var(--fc-gray), 0 0.3px .80px;
@@ -52,6 +91,32 @@
 
 .bt_line:hover::after {
     width: 100%;
+}
+
+.pt_60 {
+    padding-top: 40px;
+}
+
+.max-w702 {
+    max-width: 702px;
+}
+
+.buy-btn {
+    margin-top: 35px;
+    padding: 12px 24px;
+    border-radius: 10px;
+    background: var(--fc-yellow);
+    border: none;
+    transition: 1s;
+}
+
+.buy-btn:hover {
+    background: var(--fc-primary-white)
+}
+
+.layer-absolute {
+    position: absolute;
+    bottom: -20%;
 }
 
 
@@ -74,7 +139,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        z-index: 20;
+        z-index: 40;
         cursor: pointer;
     }
 
@@ -93,10 +158,10 @@
         width: 100%;
         flex-direction: column;
         top: 0;
-        z-index: 2;
+        z-index: 30;
         left: -100%;
         transition: all 500ms linear;
-        background-color: var(--fc-navblue);
+        background-color: var(--nav-bg);
     }
 
     .overflowhidden {
@@ -121,5 +186,27 @@
         transition: 300ms linear;
         background: var(--fc-primary-white);
         width: 27px;
+    }
+}
+
+@media(min-width:576px) {
+    .line-h72 {
+        line-height: 62px;
+    }
+
+    .pt_60 {
+        padding-top: 60px;
+    }
+}
+
+@media(min-width:768px) {
+    .line-h72 {
+        line-height: 67px;
+    }
+}
+
+@media(min-width:992px) {
+    .line-h72 {
+        line-height: 52px;
     }
 }

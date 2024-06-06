@@ -7,13 +7,16 @@
     --fs-xlg: 24px;
     --fs-lg: 32px;
     --fs-2xl: 48px;
-    --fs-3xl: 60px;
+    --fs-3xl: 42px;
     /* font-color */
     --fc-bodyclr: #000000;
     --fc-primary-white: #f1f1f1;
     --nav-bg:#0b0f13;
     --nav-border: #292a2c;
     --fc-gray: #c1c1c1;
+    --fc-yellow:#fff624;
+    --primary-gray:#d9d9d9;
+    --fc-black:#010101;
     /* --fc-clr-white1: #fcfffe;
     --fc-clr-white: #f9f9fd;
     --fc-primary-white: #fafafa;
@@ -87,44 +90,42 @@
     color: var(--fc-gray);
 }
 
-/* .clr-primary-gray {
-    color: var(--fc-gray);
-} */
-
-/* .clr-primary_white {
-    color: var(--fc-clr-primary-white);
+.clr-yellow {
+    color: var(--fc-yellow);
 }
 
-.clr-white1 {
+.clr-primary-gray {
+    color: var(--primary-gray);
+}
+.clr-black{
+ color: var(--fc-black);
+}
+
+/* .clr-white1 {
     color: var(--fc-clr-white1);
 }
 
 .clr-ft_bg {
     background-color: var(--fc-footer-bg);
-} */
+} */ 
 
 
 /* ...............................media-quries */
-/* @media(min-width:576px) {
+@media(min-width:576px) {
     :root {
-        --fs-xxsm: 16px;
-        --fs-xlg: 32px;
-        --fs-3xl: 48px;
-        --fs-4xl: 42px;
-        --fs-sm: 20px;
-
+        --fs-3xl: 50px;
     }
 }
 
 @media(min-width:768px) {
     :root {
-        --fs-4xl: 54px;
+    --fs-3xl: 55px;
 
     }
 }
 
 @media(min-width:992px) {
     :root {
-        --fs-4xl: 64px;
+        --fs-3xl: 60px;
     }
-} */
+} 

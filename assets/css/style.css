@@ -308,7 +308,7 @@ header h1 {
 /* ..............tokenomics............... */
 
 .py-124_33 {
-    padding-top: 50px;
+    padding-top: 35px;
     padding-bottom: 33px;
 }
 
@@ -466,7 +466,7 @@ header h1 {
 
 .pos_yellowGreenBlub {
     right: 44%;
-    bottom: -54px;
+    bottom: -48px;
 }
 
 .py-71-178 {
@@ -558,8 +558,8 @@ header h1 {
 }
 
 .py_177 {
-    padding-top: 150px;
-    padding-bottom: 150px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 /* ...........................our-socials...................... */
@@ -598,8 +598,8 @@ header h1 {
 }
 
 .py_124_120 {
-    padding-top: 48px;
-    padding-bottom: 48px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .ellips2 {
@@ -663,9 +663,12 @@ header h1 {
     box-shadow: 0px 3px 15px 3px var(--clr-white);
 }
 
+.svg-w {
+    width: 25px;
+    height: 69px;
+}
 
-
-
+/* ........................media-quaries............... */
 @media(max-width:991.99px) {
     .iconbox {
         width: 35px;
@@ -740,6 +743,12 @@ header h1 {
     }
 }
 
+@media(min-width:644px) and (max-width:991.98px) {
+    .roadmap_bg_img {
+        height: 850px;
+    }
+}
+
 @media(max-width:575.99px) {
     .cartoon-circle {
         width: 80px;
@@ -801,11 +810,6 @@ header h1 {
     .py-71-178 {
         padding-top: 60px;
         padding-bottom: 100px;
-    }
-
-    .py_177 {
-        padding-top: 80px;
-        padding-bottom: 80px;
     }
 
     .py_124_120 {
@@ -887,6 +891,10 @@ header h1 {
 }
 
 @media(min-width:992px) {
+    .marginright {
+        margin-right: -40px;
+    }
+
     .paddingbottom {
         padding-bottom: 60px;
     }
@@ -975,6 +983,10 @@ header h1 {
 }
 
 @media (min-width:1200px) {
+    .marginright {
+        margin-right: 0;
+    }
+
     .pos_box1 {
         top: 25%;
         left: 12%;

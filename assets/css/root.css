@@ -6,6 +6,7 @@
     --fs-md: 20px;
     --fs-xlg: 24px;
     --fs-lg: 32px;
+    --fs-xl: 25px;
     --fs-2xl: 27px;
     --fs-3xl: 42px;
     /* font-color */
@@ -22,6 +23,8 @@
     --border-input:#5d5d52;
     --input-bg:#29281a;
     --border-sclairbox: #474510;
+    --shiba-box:#10100f;
+    --cartoon-box: #191919;
     
 }
 
@@ -32,11 +35,13 @@
 .text-48 {
     font-size: var(--fs-2xl);
 }
+.text-40{
+    font-size: var(--fs-xl);
+}
 
 .text-32 {
     font-size: var(--fs-lg);
 }
-
 
 .text-24 {
     font-size: var(--fs-xlg);
@@ -103,7 +108,7 @@
 /* ...............................media-quries */
 @media(min-width:576px) {
     :root {
-        
+        --fs-xl: 40px;
         --fs-2xl: 38px;
         --fs-3xl: 50px;
     }

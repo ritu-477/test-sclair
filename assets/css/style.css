@@ -161,6 +161,17 @@
 .buy-btn1:hover {
     background: var(--fc-primary-white)
 }
+.gap-32{
+    gap: 32px;
+}
+.pricing-box1{
+    width: 404px;
+}
+.dot{
+    padding-top: 26px;
+    padding-left: 7px;
+    padding-right: 7px;
+}
 
 /* ...............................section3 about */
 .max_856 {
@@ -179,6 +190,13 @@
 
 .pb-12 {
     padding-bottom: 12px;
+}
+.pt_6{
+    padding-top: 6px;
+}
+.timimg-svg{
+    width: 24px;
+    height: 24px;
 }
 
 /* .................section-4.......................... */
@@ -199,15 +217,21 @@
     outline: none;
     background: transparent;
     max-width: 514px;
-    border: 1px solid var(--border-input);
-   
+    border: none;
+    padding: 12px;
 }
 
-.botder_input {
-    border-radius: 8px;
+.border_input {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
     border: 1px solid var(--border-input);
     max-width: 514px;
+    margin-left: auto;
+    margin-right: auto;
     background: var(--input-bg);
+    width: 100%;
 }
 
 .copy-btn {
@@ -229,6 +253,7 @@
 .mb-32 {
     margin-bottom: 32px;
 }
+/* ..............tokenomics............... */
 
 .py-124_33 {
     padding-top: 50px;
@@ -244,6 +269,50 @@
     padding: 4px 16px;
     border: 1px solid var(--border-sclairbox);
     border-radius: 6px;
+}
+.gap-12{
+    gap: 12px;
+}
+.shiba-box{
+    max-width: 1140px;
+    background: var(--shiba-box);
+    padding: 32px 75px;
+    margin-top: 27px;
+}
+
+.bordergradient{
+    width: 2px;
+    height: 32px;
+    background: linear-gradient(180deg, rgba(255, 246, 36, 0.0222222) 0%, #FFF624 55%, rgba(255, 246, 36, 0) 100%);
+}
+.max-img1{
+    max-width: 491px;
+}
+.cartoon-circle{
+    width: 132px;
+    height: 132px;
+    background: var(--cartoon-box);
+    border-radius: 50px;
+}
+.max-w553{
+    max-width: 553px;
+}
+.gap-80{
+    gap: 80px;
+}
+.pb-10{
+    padding-bottom: 10px;
+}
+.max-w574{
+    max-width: 574px;
+}
+/* ......................slider................ */
+.max-w-276 {
+    max-width: 267px;
+}
+.slider-box{
+    width: 465px;
+    padding-top: 40px 15px;
 }
 
 
@@ -313,6 +382,9 @@
         background: var(--fc-primary-white);
         width: 27px;
     }
+    .flex_wrap{
+      flex-wrap: wrap;
+    }
 }
 
 @media(min-width:576px) {
@@ -369,5 +441,8 @@
     .py_100 {
         padding-top: 100px;
         padding-bottom: 100px;
+    }
+    .text_nowrap{
+        white-space: nowrap;
     }
 }

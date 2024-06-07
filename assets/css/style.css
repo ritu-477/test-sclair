@@ -4,7 +4,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    list-style-type: none !important;
+    /* list-style-type: none !important; */
     text-decoration: none !important;
 }
 
@@ -154,6 +154,9 @@
 
 .dropdown1:hover .dropdown1-content {
     display: block;
+}
+.list_type{
+    list-style-type: none !important;
 }
 
 /* ........................section-2............................ */

@@ -42,14 +42,22 @@
                                 href="#roadmap" onclick="openNav()">Roadmap</a></li>
                         <li><a class="font-manrope fw-medium text-16 line-h24 clr-gray bt_line position-relative"
                                 href="#whitepaper" onclick="openNav()">White Paper</a></li>
-                            <li class="d-lg-none d-block"><a href=""><img src="./assets/images/svg/key-frame.svg" alt="keyframe"></a></li>
+                        <li class="d-lg-none d-block"><a href=""><img src="./assets/images/svg/key-frame.svg"
+                                    alt="keyframe"></a></li>
                     </ul>
-                    <div class="d-lg-block d-none"><img src="./assets/images/svg/key-frame.svg" alt="keyframe"></div>
+                    <div class="dropdown1 d-lg-block d-none">
+                        <img src="./assets/images/svg/vectordrop.svg" alt="vector">
+                        <img src="./assets/images/svg/dropdown-arrow.svg" alt="droparrow">
+                        <div class="dropdown1-content">
+                            <p class="mb-0 font-manrope text-14 line-h20 clr-gray fw-normal text-nowrap pb-2">Link 1</p>
+                            <p class="mb-0 font-manrope text-14 line-h20 clr-gray fw-normal line-h15 text-nowrap">Link 2</p>
+                        </div>
+                    </div>
                 </div>
             </div>
             </div>
         </nav>
-        <div class="pt_60">
+        <div class="pt_60" id="disclaimer">
             <div class="container_1140">
                 <div class="d-flex justify-content-center align-items-center flex-column">
                     <h1 class="fw-bold text-60 font-manrope line-h72 clr-primary-white">Presale is <span
@@ -73,7 +81,7 @@
         <div class="layer-absolute"><img src="./assets/images/png/layer-hero.png" alt="" class="w-100"></div>
     </header>
     <!-- section-2 -->
-    <section class="position-relative z-2 py_100">pb-12
+    <section class="position-relative z-2 py_100">
         <div class="container_1140">
             <div class="bg_layer1 buy_nowbox d-flex justify-content-between mx-auto">
                 <div class="row  w-100">
@@ -99,7 +107,7 @@
                         </div>
                         <button class="buy-btn1 fw-bold text-16 line-h24 clr-black">Buy Now</button>
                     </div>
-                    <div class="col-lg-7 col-12">
+                    <div class="col-lg-7 col-12 pt-4 pt-lg-0">
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="blank">
                                 <p class="font-manrope fw-normal text-16 line-h24 clr-gray text-nowrap mb-0 p-1">Tokens
@@ -113,170 +121,538 @@
                                     80,212,738</p>
                             </div>
                         </div>
-                        <div>
+                        <div class="position-relative">
+                            <div class="price-vetor1 d-sm-block d-none"><img src="./assets/images/svg/price-vector1.svg" alt="pricevector"></div>
+                            <div class="price-vetor2 d-sm-block d-none"><img src="./assets/images/svg/price-vector2.svg" alt="pricevector2"></div>
                             <img src="./assets/images/png/price-increase.png" alt="priceincrease" class="w-100">
                         </div>
-                        <p class="text-14 line-h21 clr-primary-gray1 font-manrope fw-normal pt_6">Purchase $Clair fast until the price increase.</p>
-                       
+                        <p class="text-14 line-h21 clr-primary-gray1 font-manrope fw-normal pt_6">Purchase $Clair fast
+                            until the price increase.</p>
+
                         <div class="d-flex pricing-box1 gap-32 w-100 flex_wrap">
-                                <div class="d-flex gap-3 align-items-center">
-                                    <img src="./assets/images/svg/price-timing.svg" alt="pricetimimg" class="timimg-svg">
-                                    <p class="fw-normal line-h20 text-16 clr-primary-white font-manrope mb-0 text-nowrap">Price <br>
-                                        increase in</p>
+                            <div class="d-flex gap-3 align-items-center">
+                                <img src="./assets/images/svg/price-timing.svg" alt="pricetimimg" class="timimg-svg">
+                                <p class="fw-normal line-h20 text-16 clr-primary-white font-manrope mb-0 text-nowrap">
+                                    Price <br>
+                                    increase in</p>
+                            </div>
+                            <div class="d-flex">
+                                <div class="d-flex flex-column align-items-center">
+                                    <p class="text-14 line-h21 clr-primary-gray1 font-manrope fw-normal mb-0">Days</p>
+                                    <img src="./assets/images/svg/days1.svg" alt="days">
                                 </div>
-                          <div class="d-flex">
-                            <div class="d-flex flex-column align-items-center">
-                                <p class="text-14 line-h21 clr-primary-gray1 font-manrope fw-normal mb-0">Days</p>
-                                <img src="./assets/images/svg/days1.svg" alt="days">
+                                <div class="dot"><img src="./assets/images/svg/dotsimg.svg" alt="dots"></div>
+                                <div class="d-flex flex-column align-items-center">
+                                    <p class="text-14 line-h21 clr-primary-gray1 font-manrope fw-normal mb-0">Hours</p>
+                                    <img src="./assets/images/svg/hoursimg.svg" alt="hours">
+                                </div>
+                                <div class="dot"><img src="./assets/images/svg/dotsimg.svg" alt="dots"></div>
+                                <div class="d-flex flex-column align-items-center">
+                                    <p class="text-14 line-h21 clr-primary-gray1 font-manrope fw-normal mb-0">Mins</p>
+                                    <img src="./assets/images/svg/mins1.svg" alt="mins">
+                                </div>
+                                <div class="dot"><img src="./assets/images/svg/dotsimg.svg" alt="dots"></div>
+                                <div class="d-flex flex-column align-items-center">
+                                    <p class="text-14 line-h21 clr-primary-gray1 font-manrope fw-normal mb-0">Secs</p>
+                                    <img src="./assets/images/svg/secs.svg" alt="second">
+                                </div>
                             </div>
-                            <div class="dot"><img src="./assets/images/svg/dotsimg.svg" alt="dots"></div>
-                            <div class="d-flex flex-column align-items-center">
-                                <p class="text-14 line-h21 clr-primary-gray1 font-manrope fw-normal mb-0">Days</p>
-                                <img src="./assets/images/svg/days1.svg" alt="days">
-                            </div>
-                            <div class="dot"><img src="./assets/images/svg/dotsimg.svg" alt="dots"></div>
-                            <div class="d-flex flex-column align-items-center">
-                                <p class="text-14 line-h21 clr-primary-gray1 font-manrope fw-normal mb-0">Days</p>
-                                <img src="./assets/images/svg/days1.svg" alt="days">
-                            </div>
-                            <div class="dot"><img src="./assets/images/svg/dotsimg.svg" alt="dots"></div>
-                            <div class="d-flex flex-column align-items-center">
-                                <p class="text-14 line-h21 clr-primary-gray1 font-manrope fw-normal mb-0">Days</p>
-                                <img src="./assets/images/svg/days1.svg" alt="days">
-                            </div>
-                          </div>
-                       </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <!-- ..........section-3................... -->
-    <section class=" z-2 position-relative">
+    <section class=" z-2 position-relative" id="about">
         <div class="container_1140">
             <div class="about-bg d-flex flex-column align-items-center justify-content-center">
                 <h2 class="fw-semibold text-48 line line-h57 clr-primary-white text-center font-manrope">About <span
                         class="fw-bold clr-yellow">$CLAIR</span></h2>
-                        <p class="clr-primary-gray1 text-16 line-h24 fw-normal font-manrope max-w776 text-center mb-0 pb-12">As you navigate through the avatars, you'll find each one has a unique voice, bringing laughter and a touch of sarcasm
-                        to the otherwise serious discussions in the crypto space.</p>
-                        <p class="clr-primary-gray1 text-16 line-h24 fw-normal font-manrope max-w776 text-center mb-0 pb-12">In a landscape where tensions can run high, Baby Sinclair’s memes serve as a reminder that, sometimes, the best way to
-                        confront challenges is with a good laugh.</p>
-                            <p class="clr-primary-gray1 text-16 line-h24 fw-normal font-manrope text-center mb-0 max_856">In this meme-driven world, laughter is not just a reaction; it's a powerful tool for change, and Baby Sinclair is
-                            wielding it with style. The bad players better watch out; the crypto defender is here, armed with memes and ready to
-                            act.</p>
-                            <button class="fw-bold font-manrope text-16 line-h24 clr-black buy-btn">Learn More</button>
+                <p class="clr-primary-gray1 text-16 line-h24 fw-normal font-manrope max-w776 text-center mb-0 pb-12">As
+                    you navigate through the avatars, you'll find each one has a unique voice, bringing laughter and a
+                    touch of sarcasm
+                    to the otherwise serious discussions in the crypto space.</p>
+                <p class="clr-primary-gray1 text-16 line-h24 fw-normal font-manrope max-w776 text-center mb-0 pb-12">In
+                    a landscape where tensions can run high, Baby Sinclair’s memes serve as a reminder that, sometimes,
+                    the best way to
+                    confront challenges is with a good laugh.</p>
+                <p class="clr-primary-gray1 text-16 line-h24 fw-normal font-manrope text-center mb-0 max_856">In this
+                    meme-driven world, laughter is not just a reaction; it's a powerful tool for change, and Baby
+                    Sinclair is
+                    wielding it with style. The bad players better watch out; the crypto defender is here, armed with
+                    memes and ready to
+                    act.</p>
+                <button class="fw-bold font-manrope text-16 line-h24 clr-black buy-btn">Learn More</button>
             </div>
         </div>
     </section>
     <!-- section-4 -->
-     <section class="section4-bg position-relative z-2">
+    <section class="section4-bg position-relative z-2" id="privacyt">
         <div><img src="./assets/images/png/about-layer.png" alt="aboutlayer" class="w-100"></div>
         <div class="container_1140">
             <div class="d-flex justify-content-center flex-column py-86 max-w806  mx-auto">
-                  <h2 class="fw-semibold text-48 line line-h57 clr-primary-white text-center font-manrope mb-4"><span class="clr-yellow">$CLAIR</span> Smart Contract Address</h2>
-                    <div class="d-flex mb-32 border_input w-100">
-                        <input type="text" placeholder="0xFD1929755F73f974648daD00ab491a7C44a00eeD" class="input_modification w-100">
-                        <button class="copy-btn fw-bold font-manrope text-16 line-h24 clr-black ">Copy</button>
-                    </div>
-                  <p class="clr-primary-gray1 text-16 line-h24 fw-normal font-manrope text-center mb-0 max-w806 mx-auto">Built on the Ethereum blockchain and powered by the most advanced AI technology, Baby Sinclair has the potential to make
-                millions in both early stages and long-term investment. Our strategic burn system, which will burn millions of $CLAIR
-                quarterly, aims to increase its value significantly. Don't miss out! Get in early and secure your chance to become the
-                next millionaire.</p>    
+                <h2 class="fw-semibold text-48 line line-h57 clr-primary-white text-center font-manrope mb-4"><span
+                        class="clr-yellow">$CLAIR</span> Smart Contract Address</h2>
+                <div class="d-flex mb-32 border_input w-100">
+                    <input type="text" placeholder="0xFD1929755F73f974648daD00ab491a7C44a00eeD"
+                        class="input_modification w-100">
+                    <button class="copy-btn fw-bold font-manrope text-16 line-h24 clr-black">Copy</button>
+                </div>
+                <p class="clr-primary-gray1 text-16 line-h24 fw-normal font-manrope text-center mb-0 max-w806 mx-auto">
+                    Built on the Ethereum blockchain and powered by the most advanced AI technology, Baby Sinclair has
+                    the potential to make
+                    millions in both early stages and long-term investment. Our strategic burn system, which will burn
+                    millions of $CLAIR
+                    quarterly, aims to increase its value significantly. Don't miss out! Get in early and secure your
+                    chance to become the
+                    next millionaire.</p>
             </div>
         </div>
-     </section>
-     <!-- section-5 -->
-      <section class="position-relative z-2">
-        <div><img src="./assets/images/png/tokenomic-rectangle.png" alt="tokenrect" class="w-100 position-absolute top-0 z-n1"></div>
-        <div><img src="./assets/images/png/token-bottomrectangle.png" alt="reactangleb" class="w-100 position-absolute bottom-0 z-n1"></div>
+    </section>
+    <!-- section-5 -->
+    <section class="position-relative z-2" id="audit">
+        <div class="d-lg-block d-none ellips-1"><img src="./assets/images/png/ellips1.png" alt="ellips1"></div>
+        <div><img src="./assets/images/png/tokenomic-rectangle.png" alt="tokenrect"
+                class="w-100 position-absolute top-0 z-n1"></div>
+        <div><img src="./assets/images/png/token-bottomrectangle.png" alt="reactangleb"
+                class="w-100 position-absolute bottom-0 z-n1"></div>
         <div class="container_1140">
-            <div class="row d-flex justify-content-lg-between justify-content-center py-124_33 flex-lg-row flex-column-reverse">
-                <div class="col-lg-5 col-12 d-flex align-items-center flex-column">
-                   <div class="blank">
-                    <h2 class="fw-semibold text-48 line line-h57 clr-primary-white font-manrope">Tokenomics</h2>
-                    <div class="sclair_parent d-flex align-items-center gap-3">
-                        <p class="fw-normal text-16 line-h36 font-manrope clr-gray mb-0">Baby Sinclair</p>
-                        <span class="fw-normal text-16 line-h36 font-manrope clr-yellow sclair_box">$Clair</span>
+            <div
+                class="row d-flex justify-content-lg-between justify-content-center py-124_33 flex-lg-row flex-column-reverse">
+                <div class="col-lg-5 col-12 d-flex align-items-center flex-column pt-4 pt-lg-0">
+                    <div class="blank">
+                        <h2 class="fw-semibold text-48 line line-h57 clr-primary-white font-manrope">Tokenomics</h2>
+                        <div class="sclair_parent d-flex align-items-center gap-3">
+                            <p class="fw-normal text-16 line-h36 font-manrope clr-gray mb-0">Baby Sinclair</p>
+                            <span class="fw-normal text-16 line-h36 font-manrope clr-yellow sclair_box">$Clair</span>
+                        </div>
+                        <p class="text-16 line-h36 font-manrope fw-medium  clr-gray mb-0 pb-1">Total Tokens</p>
+                        <p class="text-40 line-h48 fw-semibold font-manrope clr-yellow mb-32">100,000,000,000</p>
+                        <div class="d-flex flex-column gap-12">
+                            <div class="d-flex align-items-center gap-12">
+                                <img src="./assets/images/svg/token-arrow.svg" alt="arrow">
+                                <p class="fw-semibold font-manrope text-24 line-h36 clr-gray mb-0">1%</p>
+                                <p class="fw-normal text-16 line-h24 font-manrope clr-gray mb-0">Presale</p>
+                            </div>
+                            <div class="d-flex align-items-center gap-12">
+                                <img src="./assets/images/svg/token-arrow.svg" alt="arrow">
+                                <p class="fw-semibold font-manrope text-24 line-h36 clr-gray mb-0">3%</p>
+                                <p class="fw-normal text-16 line-h24 font-manrope clr-gray mb-0">Marketing</p>
+                            </div>
+                            <div class="d-flex align-items-center gap-12">
+                                <img src="./assets/images/svg/token-arrow.svg" alt="arrow">
+                                <p class="fw-semibold font-manrope text-24 line-h36 clr-gray mb-0">5%</p>
+                                <p class="fw-normal text-16 line-h24 font-manrope clr-gray mb-0">Team - locked for 24
+                                    months</p>
+                            </div>
+                            <div class="d-flex align-items-center gap-12">
+                                <img src="./assets/images/svg/token-arrow.svg" alt="arrow">
+                                <p class="fw-semibold font-manrope text-24 line-h36 clr-gray mb-0">10%</p>
+                                <p class="fw-normal text-16 line-h24 font-manrope clr-gray mb-0">Investors - locked for
+                                    24 months</p>
+                            </div>
+                            <div class="d-flex align-items-center gap-12">
+                                <img src="./assets/images/svg/token-arrow.svg" alt="arrow">
+                                <p class="fw-semibold font-manrope text-24 line-h36 clr-gray mb-0">21%</p>
+                                <p class="fw-normal text-16 line-h24 font-manrope clr-gray mb-0">Exchange listings &
+                                    liquidity</p>
+                            </div>
+                            <div class="d-flex align-items-center gap-12">
+                                <img src="./assets/images/svg/token-arrow.svg" alt="arrow">
+                                <p class="fw-semibold font-manrope text-24 line-h36 clr-gray mb-0">60%</p>
+                                <p class="fw-normal text-16 line-h24 font-manrope clr-gray mb-0">Rewards and burns</p>
+                            </div>
+                        </div>
                     </div>
-                    <p class="text-16 line-h36 font-manrope fw-medium  clr-gray mb-0 pb-1">Total Tokens</p>
-                    <p class="text-40 line-h48 fw-semibold font-manrope clr-yellow mb-32">100,000,000,000</p>
-                    <div class="d-flex flex-column gap-12">
-                        <div class="d-flex align-items-center gap-12">
-                            <img src="./assets/images/svg/token-arrow.svg" alt="arrow">
-                            <p class="fw-semibold font-manrope text-24 line-h36 clr-gray mb-0">1%</p>
-                            <p class="fw-normal text-16 line-h24 font-manrope clr-gray mb-0">Presale</p>
-                        </div>
-                        <div class="d-flex align-items-center gap-12">
-                            <img src="./assets/images/svg/token-arrow.svg" alt="arrow">
-                            <p class="fw-semibold font-manrope text-24 line-h36 clr-gray mb-0">3%</p>
-                            <p class="fw-normal text-16 line-h24 font-manrope clr-gray mb-0">Marketing</p>
-                        </div>
-                        <div class="d-flex align-items-center gap-12">
-                            <img src="./assets/images/svg/token-arrow.svg" alt="arrow">
-                            <p class="fw-semibold font-manrope text-24 line-h36 clr-gray mb-0">5%</p>
-                            <p class="fw-normal text-16 line-h24 font-manrope clr-gray mb-0">Team - locked for 24 months</p>
-                        </div>
-                        <div class="d-flex align-items-center gap-12">
-                            <img src="./assets/images/svg/token-arrow.svg" alt="arrow">
-                            <p class="fw-semibold font-manrope text-24 line-h36 clr-gray mb-0">10%</p>
-                            <p class="fw-normal text-16 line-h24 font-manrope clr-gray mb-0">Investors - locked for 24 months</p>
-                        </div>
-                        <div class="d-flex align-items-center gap-12">
-                            <img src="./assets/images/svg/token-arrow.svg" alt="arrow">
-                            <p class="fw-semibold font-manrope text-24 line-h36 clr-gray mb-0">21%</p>
-                            <p class="fw-normal text-16 line-h24 font-manrope clr-gray mb-0">Exchange listings & liquidity</p>
-                        </div>
-                        <div class="d-flex align-items-center gap-12">
-                            <img src="./assets/images/svg/token-arrow.svg" alt="arrow">
-                            <p class="fw-semibold font-manrope text-24 line-h36 clr-gray mb-0">60%</p>
-                            <p class="fw-normal text-16 line-h24 font-manrope clr-gray mb-0">Rewards and burns</p>
-                        </div>
-                    </div>
-                   </div>
                 </div>
                 <div class="col-lg-5 col-12  d-flex align-items-center flex-column">
-                    <img src="./assets/images/png/tecnomicks-percent.png" alt="percentimg" class="w-100 max-img1"> 
+                    <img src="./assets/images/png/tecnomicks-percent.png" alt="percentimg" class="w-100 max-img1">
                 </div>
             </div>
             <div class="shiba-box">
-                <div class="row w-100 justify-content-between">
-                    <div class="col-lg-4 col-12">
+                <div class="row w-100 justify-content-between justify-content-center">
+                    <div class="col-lg-4 col-12 d-flex justify-content-center">
                         <div class="d-flex gap-12">
-                          <div class="cartoon-circle d-flex justify-content-center align-items-center"><img src="./assets/images/svg/cat-svg.svg" alt="catsvg"></div>
-                          <img src="./assets/images/svg/plus-icon.svg" alt="plusicon">
-                        <div class="cartoon-circle d-flex justify-content-center align-items-center"><img src="./assets/images/svg/cartoon-svg.svg"
-                                alt="cartoon"></div>
+                            <div class="cartoon-circle d-flex justify-content-center align-items-center"><img
+                                    src="./assets/images/svg/cat-svg.svg" alt="catsvg"></div>
+                            <img src="./assets/images/svg/plus-icon.svg" alt="plusicon">
+                            <div class="cartoon-circle d-flex justify-content-center align-items-center"><img
+                                    src="./assets/images/svg/cartoon-svg.svg" alt="cartoon"></div>
                         </div>
                     </div>
-                    <div class="col-lg-7 col-12 d-flex align-items-lg-end flex-column justify-content-center">
-                        <div class="d-flex flex-column justify-content-center">
-                            <p class="fw-semibold text-20 line-h30 clr-primary-white font-manrope max-w553 pb-10 mb-0 text_nowrap">Baby Sinclair Stands
+                    <div
+                        class="col-lg-7 col-12 d-flex align-items-lg-end flex-column justify-content-center pt-4 pt-lg-0">
+                        <div class="d-flex flex-column justify-content-center align-items-center">
+                            <p
+                                class="fw-semibold text-20 line-h30 clr-primary-white font-manrope max-w553 pb-10 mb-0 text_nowrap text-md-start text-center">
+                                Baby Sinclair Stands
                                 Strong with the Shiba Inu Community</p>
-                            <p class="mb-0 text-16 line-h24 clr-gray font-manrope fw-normal max-w574 text_nowrap">10% of every $CLAIR token sold post-presale will be dedicated to burning SHIB.</p>
+                            <p
+                                class="mb-0 text-16 line-h24 clr-gray font-manrope fw-normal max-w574 text_nowrap text-md-start text-center">
+                                10% of every $CLAIR token sold post-presale will be dedicated to burning SHIB.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-      </section>
-      <!-- slider -->
-    <div class="slider-box">
-        <div class=" responsive_2 overflow-hidden">
-            <a href="" target="_blank" class=" px-3"><img class=" w-100 max-w-267 " src="./assets/images/s1.png"
-                    alt="logo1"></a>
-            <a href="" target="_blank" class=" px-3"><img class=" w-100 max-w-267 " src="./assets/images/s2.png"
-                    alt="logo2"></a>
-            <a href="" target="_blank" class=" px-3"><img class=" w-100 max-w-267 " src="./assets/images/s3.png"
-                    alt="logo3"></a>
-            <a href="" target="_blank" class=" px-3"><img class=" w-100 max-w-267 " src="./assets/images/s4.png"
-                    alt="logo4"></a>
-            <a href="" target="_blank" class=" px-3"><img class=" w-100 max-w-267 " src="./assets/images/s5.png"
-                    alt="logo5"></a>
-            <a href="" target="_blank" class=" px-3"><img class=" w-100 max-w-267 " src="./assets/images/s6.png"
-                    alt="logo6"></a>
+    </section>
+    <!-- slider -->
+    <section class="bg-image-2 position-relative" id="tokenomics">
+        <div><img src="./assets/images/png/layer-bgunion.png" alt="union" class="w-100"></div>
+        <div class="position-absolute bottom-0"><img src="./assets/images/png/union-bglayer.png" alt="unionbg" class="w-100"></div>
+        <div class="container_1140">
+            <div class="row d-flex justify-content-center justify-content-lg-between py_77_84">
+                <div class="col-lg-4 col-12 d-flex justify-content-lg-end justify-content-center">
+                    <div class="blank">
+                        <img src="./assets/images/png/lock-image.png" alt="lock" class="w-100">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12 d-flex justify-content-center flex-column pt-4 pt-lg-0">
+                    <div class="blank">
+                        <p class="fw-normaln font-manrope text-20 line-h30 clr-gray mb-0 pb-10">Rest easy knowing that
+                            $CLAIR is</p>
+                        <h4 class="text-32 line-h48 clr-yellow font-manrope mb-0 pb-10">Fully Audited and 100% Secure.
+                        </h4>
+                        <p class="fw-normaln font-manrope text-20 line-h30 clr-gray mb-32">Zero Room for Rug Pulls:
+                            Invest with Confidence.</p>
+                        <button class="copy-btn fw-bold font-manrope text-16 line-h24 clr-black">Audit</button>
+                    </div>
+                </div>
+            </div>
+            <div class="br_bottom"></div>
+        </div>
+        <div class="container_1140">
+            <div class="row py_49_115 d-flex justify-content-lg-end justify-content-center">
+                <div class="col-lg-5 col-12 d-flex justify-content-center">
+                    <div class="blank">
+                        <h4 class="fw-semibold text-32 line-h48 clr-primary-white font-manrope">Listing on <span
+                                class="clr-yellow">Major
+                                Exchanges</span></h4>
+                        <p class="fw-normal text-20 line-h30 font-manrope clr-gray max-w475 mb-0">Baby Sinclair’s Team is in
+                            action to secure the
+                            <span class="clr-yellow">$CLAIR</span> listing on major exchanges. Exciting milestones
+                            ahead.
+                        </p>
+                    </div>
+                    </div>
+                    <div class="col-lg-5 col-12 pt-4 pt-lg-0">
+                        <div class="slider-box">
+                            <div class=" responsive_2 overflow-hidden">
+                                <a href="https://www.coinbase.com/en-gb/" target="_blank" class=" px-3"><img class=" w-100 max-w-267 "
+                                        src="./assets/images/png/s1.png" alt="logo1"></a>
+                                <a href="https://www.kraken.com/" target="_blank" class=" px-3"><img class=" w-100 max-w-267 "
+                                        src="./assets/images/png/s2.webp" alt="logo2"></a>
+                                <a href="https://www.kucoin.com/" target="_blank" class=" px-3"><img class=" w-100 max-w-267 "
+                                        src="./assets/images/png/s3.webp" alt="logo3"></a>
+                                <a href="" target="_blank" class=" px-3"><img class=" w-100 max-w-267 "
+                                        src="./assets/images/png/s4.webp" alt="logo4"></a>
+                                <a href="" target="_blank" class=" px-3"><img class=" w-100 max-w-267 "
+                                        src="./assets/images/png/s5.webp" alt="logo5"></a>
+                                <a href="https://www.coingecko.com/" target="_blank" class=" px-3"><img class=" w-100 max-w-267 "
+                                        src="./assets/images/png/s6.png" alt="logo6"></a>
+                            </div>
+                            <div class="d-flex gap-3">
+                                <div class="border1"></div>
+                                <div class="border2"></div>
+                                <div class="border3"></div>
+                            </div>
+
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+    <!--............... roadmap............ -->
+    <section class="roadmap_bg_img position-relative" id="roadmap">
+        <div class="position-absolute pos_roadmap_colorFullImg">
+            <img class="w-100 display_none" src="./assets/images/png/timelineimage.png" alt="roadmap-img">
+        </div>
+        <div class="container_1140">
+            <h2 class="ff_manrope fw-semibold text-48  line-h57 clr-primary-white text-center">Roadmap</h2>
+            <div class="d-flex gap_90 gap_20 flex_wrap justify_center">
+                <div class="position_absolute pos_box1">
+                    <div class="roadmap_box paading_box">
+                        <p class="font-manrope fw-medium text-32 line-h48 color_white mb-3 ps-2">Phase 1</p>
+                        <ul class=" mb-0">
+                            <li class="font-manrope fw-medium text-16 line-h24 clr-gray mb-2 text-nowrap">Team
+                                Recruitment
+                            </li>
+                            <li class="font-manrope fw-medium text-16 line-h24  clr-gray mb-2 text-nowrap">Social Media
+                            </li>
+                            <li class="font-manrope fw-medium text-16 line-h24  clr-gray mb-2 text-nowrap">Audit Smart
+                                Contract</li>
+                            <li class="font-manrope fw-medium text-16 line-h24  clr-gray mb-2 text-nowrap">Whitepaper
+                            </li>
+                            <li class="font-manrope fw-medium text-16 line-h24  clr-gray mb-2 text-nowrap">Presale
+                                Launch
+                            </li>
+                            <li class="font-manrope fw-medium text-16 line-h24  clr-gray mb-2 text-nowrap">Community
+                                Growth
+                            </li>
+                            <li class="font-manrope fw-medium text-16 line-h24  color_lightGrey mb-0 text-nowrap">AI Avatars
+                                Release</li>
+                        </ul>
+                        <div class="position-absolute pos_yellowGreenBlub d-xl-block d-none">
+                            <svg width="25" height="69" viewBox="0 0 25 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13 69V13" stroke="#00A551" stroke-width="2" />
+                                <circle cx="12.5" cy="12.5" r="12.5" fill="url(#paint0_linear_113_612)" />
+                                <defs>
+                                    <linearGradient id="paint0_linear_113_612" x1="12.5" y1="11" x2="12.5" y2="16.5"
+                                        gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#FFF624" />
+                                        <stop offset="1" stop-color="#00A551" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="position_absolute pos_box2">
+                    <div class="roadmap_box paading_box">
+                        <p class="font-manrope fw-medium text-32 line-h48 color_white mb-3 ps-2">Phase 2</p>
+                        <ul class=" mb-0">
+                            <li class="font-manrope fw-medium text-16 lh_24 clr-gray mb-2 text-nowrap">Official Launch
+                            </li>
+                            <li class="font-manrope fw-medium text-16 lh_24 clr-gray mb-2 text-nowrap">Burns 5%
+                            </li>
+                            <li class="font-manrope fw-medium text-16 lh_24 clr-gray mb-2 text-nowrap">Major DEX & CEX
+                                Listings</li>
+                            <li class="font-manrope fw-medium text-16 lh_24 clr-gray mb-2 text-nowrap">Coinmarketcap
+                            </li>
+                            <li class="font-manrope fw-medium text-16 lh_24 clr-gray mb-2 text-nowrap">CoinGecko
+                            </li>
+                            <li class="font-manrope fw-medium text-16 lh_24 clr-gray mb-2 text-nowrap">Influencers
+                                Marketing</li>
+                            <li class="font-manrope fw-medium text-16 lh_24 clr-gray mb-0 text-nowrap">More AI Avatars
+                                Release</li>
+                        </ul>
+                        <div class="position-absolute pos_yellowGreenBlub d-xl-block d-none">
+                            <svg width="25" height="69" viewBox="0 0 25 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13 69V13" stroke="#00A551" stroke-width="2" />
+                                <circle cx="12.5" cy="12.5" r="12.5" fill="url(#paint0_linear_113_612)" />
+                                <defs>
+                                    <linearGradient id="paint0_linear_113_612" x1="12.5" y1="11" x2="12.5" y2="16.5"
+                                        gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#FFF624" />
+                                        <stop offset="1" stop-color="#00A551" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="position_absolute pos_box3">
+                    <div class="roadmap_box paading_box">
+                        <p class="font-manrope fw-medium text-32 line-h48 color_white mb-3 ps-2">Phase 3</p>
+                        <ul class=" mb-0">
+                            <li class="font-manrope fw-medium text-16 line-h24 clr-gray mb-2 text-nowrap">Burns (5%
+                                quarterly)
+                            </li>
+                            <li class="font-manrope fw-medium text-16 line-h24 clr-gray mb-2 text-nowrap">Rewards Program
+                            </li>
+                            <li class="font-manrope fw-medium text-16 line-h24 clr-gray mb-2 text-nowrap">Multiple
+                                Partnerships</li>
+                            <li class="font-manrope fw-medium text-16 line-h24 clr-gray mb-2 ">Create your own AI Avatar
+                                Voiceover.
+                            </li>
+                            <li class="font-manrope fw-medium text-16 line-h24 clr-gray mb-0">AI Metaverse Avatar
+                                Play-to-Earn
+                            </li>
+    
+                        </ul>
+                        <div class="position-absolute pos_yellowGreenBlub d-xl-block d-none">
+                            <svg width="25" height="69" viewBox="0 0 25 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13 69V13" stroke="#00A551" stroke-width="2" />
+                                <circle cx="12.5" cy="12.5" r="12.5" fill="url(#paint0_linear_113_612)" />
+                                <defs>
+                                    <linearGradient id="paint0_linear_113_612" x1="12.5" y1="11" x2="12.5" y2="16.5"
+                                        gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#FFF624" />
+                                        <stop offset="1" stop-color="#00A551" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- accordion -->
+     <section class="acoordion-bg py_177" id="cookies">
+      <div class="max-w800 mx-auto w-100">
+        <h2 class="ff_manrope fw-semibold text-48  line-h57 clr-primary-white text-center paddingbottom">Frequently Asked <span
+                class="clr-yellow">Questions</span></h2>
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h5 class="accordion-header" id="headingOne">
+                    <button
+                        class="accordion-button font-manrope text-16 line-h24 clr-primary-white fw-semibold clr-primary-gray1"
+                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                        aria-controls="collapseOne">
+                        WHAT IS $CLAIR?
+                    </button>
+                </h5>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p class="font-manrope text-16 line-h24 fw-normal mb-0">Built on the Ethereum blockchain
+                            and powered by the most advanced
+                            AI technology, Baby Sinclair has the potential to make millions.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h5 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Arcu in pellentesque sit odio.
+                    </button>
+                </h5>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p class="font-manrope text-16 line-h24 fw-normal mb-0">Built on the Ethereum blockchain
+                            and powered by the most advanced
+                            AI technology, Baby Sinclair has the potential to make millions.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h5 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Lorem gravida feugiat aliquet arcu porttitor sodales tellus habitant sed.
+                    </button>
+                </h5>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                    <p class="font-manrope text-16 line-h24 fw-normal mb-0">Built on the Ethereum blockchain
+                        and powered by the most advanced
+                        AI technology, Baby Sinclair has the potential to make millions.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h5 class="accordion-header" id="headingfour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
+                    Metus augue dictumst sit amet.
+                    </button>
+                </h5>
+                <div id="collapsefour" class="accordion-collapse collapse" aria-labelledby="headingfour"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p class="font-manrope text-16 line-h24 fw-normal mb-0">Built on the Ethereum blockchain
+                            and powered by the most advanced
+                            AI technology, Baby Sinclair has the potential to make millions.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h5 class="accordion-header" id="headingfive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapsefive" aria-expanded="false" aria-controls="collapsefive">
+                    Elementum viverra tellus tincidunt nunc odio at id ipsum.
+                    </button>
+                </h5>
+                <div id="collapsefive" class="accordion-collapse collapse" aria-labelledby="headingfive"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p class="font-manrope text-16 line-h24 fw-normal mb-0">Built on the Ethereum blockchain
+                            and powered by the most advanced
+                            AI technology, Baby Sinclair has the potential to make millions.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h5 class="accordion-header" id="headingsix">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapsesix" aria-expanded="false" aria-controls="collapsesix">
+                    Sagittis morbi aliquam facilisis ornare lacus tempus massa.
+                    </button>
+                </h5>
+                <div id="collapsesix" class="accordion-collapse collapse" aria-labelledby="headingsix"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p class="font-manrope text-16 line-h24 fw-normal mb-0">Built on the Ethereum blockchain
+                            and powered by the most advanced
+                            AI technology, Baby Sinclair has the potential to make millions.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h5 class="accordion-header" id="headingseven">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseseven" aria-expanded="false" aria-controls="collapseseven">
+                    Elementum at dui varius consequat fringilla.
+                    </button>
+                </h5>
+                <div id="collapseseven" class="accordion-collapse collapse" aria-labelledby="headingseven"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p class="font-manrope text-16 line-h24 fw-normal mb-0">Built on the Ethereum blockchain
+                            and powered by the most advanced
+                            AI technology, Baby Sinclair has the potential to make millions.</p>
+                    </div>
+                </div>
+            </div>
         </div>
 
+      </div>
+     </section>
+     <!-- our-socials -->
+      <section class="position-relative z-2 py_124_120" id="whitepaper">
+        <div class="ellips2"><img src="./assets/images/png/social-elllips.png" alt="socilellips"></div>
+        <div class="social-absolute"><img src="./assets/images/png/socials-bg.png" alt=""></div>
+        <div class="container_1140">
+            <div class="our-socialsbox m-auto">
+                <h2 class="ff_manrope fw-semibold text-48  line-h57 clr-primary-white text-center   ">Our <span
+                        class="clr-yellow">Socials</span></h2>
+                        <p class="text-16 line-h24 font-manrope fw-normal clr-primary-gray1 text-center mb-4">Join us on social media for exclusive giveaways and stay connected!</p>
+                        <p class="text-20 line-h30 fw-normal font-manrope clr-yellow text-center mb-4">“Exciting Releases of 'Bad Players' Avatars Coming Soon: Be Ready for the Fun!"</p>
+                        <div class="d-flex gap-3 align-items-center justify-content-center">
+                            <a class="social-icon" href="https://discord.com/servers" target="_blank"><img src="./assets/images/svg/discord-icon.svg" alt="discordicon"></a>
+                            <a class="social-icon" href="https://x.com/i/flow/login" target="_blank"><img src="./assets/images/svg/twiitter-icon.svg" alt="twitter"></a>
+                            <a class="social-icon" href="https://telegram.org/" target="_blank"><img src="./assets/images/svg/telegram-icon.svg" alt="telegram"></a>
+                        </div>
+            </div>
+        </div>
+      </section>
+    <footer class="py-5 position-relative footer-bg">
+        <div class="container">
+            <p class="font-manrope fw-semibold text-60 line-h72 clr-yellow text-center mb-0">$CLAIR</p>
+            <p class="font-manrope fw-normal text-16 line-h24 clr-primary-gray1 mb-0 text-center mx-auto footertext">In this meme-driven world, laughter is not just a reaction; it's a powerful tool for chang
+            and Baby Sinclair is wielding it with style. The bad players better watch out;
+            the crypto defender is here, armed with memes and ready to act.</p>
+    <div class="d-flex justify-content-center">
+            <ul class="mb-0 ps-0 d-flex gap-32 flex-wrap justify-content-center">
+                <li><a class="font-manrope fw-medium text-16 line-h24 clr-primary-gray position-relative bt_line1" href="#about">About</a></li>
+                <li><a class="font-manrope fw-medium text-16 line-h24 clr-primary-gray position-relative bt_line1" href="#tokenomics">Tokenomics</a></li>
+                <li><a class="font-manrope fw-medium text-16 line-h24 clr-primary-gray position-relative bt_line1" href="#audit">Audit</a></li>
+                <li><a class="font-manrope fw-medium text-16 line-h24 clr-primary-gray position-relative bt_line1" href="#roadmap">Roadmap</a></li>
+                <li><a class="font-manrope fw-medium text-16 line-h24 clr-primary-gray position-relative bt_line1" href="#whitepaper">White Paper</a></li>
+                <li><a class="font-manrope fw-medium text-16 line-h24 clr-primary-gray position-relative bt_line1" href="#privacyt">Privacyt</a></li>
+                <li><a class="font-manrope fw-medium text-16 line-h24 clr-primary-gray position-relative bt_line1" href="#cookies">Cookies</a></li>
+                <li><a class="font-manrope fw-medium text-16 line-h24 clr-primary-gray position-relative bt_line1" href="#disclaimer">Disclaimer</a></li>
+            </ul>
     </div>
+    <div class="footerborder"></div>
+    </div>
+    <div class="topBtn d-flex justify-content-center align-items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="white" class="bi bi-chevron-double-up"
+            viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+                d="M7.646 2.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 3.707 2.354 9.354a.5.5 0 1 1-.708-.708z" />
+            <path fill-rule="evenodd"
+                d="M7.646 6.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 7.707l-5.646 5.647a.5.5 0 0 1-.708-.708z" />
+        </svg>
+    </div>
+    </footer>
+
+
     <!--script-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="

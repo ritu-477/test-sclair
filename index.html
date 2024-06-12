@@ -60,7 +60,7 @@
         <div class="pt_60" id="disclaimer">
             <div class="container_1140">
                 <div class="d-flex justify-content-center align-items-center flex-column">
-                    <h1 class="fw-bold text-60 font-manrope line-h72 clr-primary-white">Presale is <span
+                    <h1 class="fw-bold text-60 font-manrope line-h72 clr-primary-white mb-0">Presale is <span
                             class="clr-yellow">Live</span></h1>
                     <p class="text-center fw-normal text-16 line-h24 font-manrope clr-primary-gray max-w702 mb-0">Led by
                         the most advanced AI technology, with a unique burn system to potentially increase its value
@@ -115,7 +115,7 @@
                             <div class="blank">
                                 <p class="font-manrope fw-normal text-16 line-h24 clr-gray text-nowrap mb-0 p-1">Tokens
                                     are Sold</p>
-                                <p class="font-manrope fw-bold text-16 line-h24 clr-yellow text-nowrap">98,212,738</p>
+                                <p class="font-manrope fw-bold text-16 line-h24 clr-yellow text-nowrap" id="demo">98,212,738</p>
                             </div>
                             <div class="blank">
                                 <p class="font-manrope fw-normal text-16 line-h24 clr-gray text-nowrap mb-0 p-1">Tokens
@@ -129,7 +129,7 @@
                                     alt="pricevector"></div>
                             <div class="price-vetor2 d-sm-block d-none"><img src="./assets/images/svg/price-vector2.svg"
                                     alt="pricevector2"></div>
-                            <img src="./assets/images/png/price-increase.png" alt="priceincrease" class="w-100">
+                            <input type="range" class="sliddr_range" min="98" max="212738" value="101" id="#range-slider">
                         </div>
                         <p class="text-14 line-h21 clr-primary-gray1 font-manrope fw-normal pt_6">Purchase $Clair fast
                             until the price increase.</p>
@@ -143,24 +143,28 @@
                             </div>
                             <div class="d-flex">
                                 <div class="d-flex flex-column align-items-center">
-                                    <p class="text-14 line-h21 clr-primary-gray1 font-manrope fw-normal mb-0">Days</p>
-                                    <img src="./assets/images/svg/days1.svg" alt="days">
+                                    <p class="text-14 line-h21 clr-primary-gray1 font-manrope fw-normal mb-0 pb-1">Days</p>
+                                    <div class="timer-box font-manrope text-24 line-h36 clr-primary-white d-flex justify-content-center align-items-center"
+                                        id="days">00</div>
                                 </div>
                                 <div class="dot"><img src="./assets/images/svg/dotsimg.svg" alt="dots"></div>
                                 <div class="d-flex flex-column align-items-center">
-                                    <p class="text-14 line-h21 clr-primary-gray1 font-manrope fw-normal mb-0">Hours</p>
-                                    <img src="./assets/images/svg/hoursimg.svg" alt="hours">
+                                    <p class="text-14 line-h21 clr-primary-gray1 font-manrope fw-normal mb-0 pb-1">Hours</p>
+                                     <div class="timer-box font-manrope text-24 line-h36 clr-primary-white d-flex justify-content-center align-items-center" id="hours">12</div>
                                 </div>
                                 <div class="dot"><img src="./assets/images/svg/dotsimg.svg" alt="dots"></div>
                                 <div class="d-flex flex-column align-items-center">
-                                    <p class="text-14 line-h21 clr-primary-gray1 font-manrope fw-normal mb-0">Mins</p>
-                                    <img src="./assets/images/svg/mins1.svg" alt="mins">
+                                    <p class="text-14 line-h21 clr-primary-gray1 font-manrope fw-normal mb-0 pb-1">Mins</p>
+                                    <div class="timer-box font-manrope text-24 line-h36 clr-primary-white d-flex justify-content-center align-items-center"
+                                        id="mins">46</div>
                                 </div>
                                 <div class="dot"><img src="./assets/images/svg/dotsimg.svg" alt="dots"></div>
                                 <div class="d-flex flex-column align-items-center">
-                                    <p class="text-14 line-h21 clr-primary-gray1 font-manrope fw-normal mb-0">Secs</p>
-                                    <img src="./assets/images/svg/secs.svg" alt="second">
+                                    <p class="text-14 line-h21 clr-primary-gray1 font-manrope fw-normal mb-0 pb-1">Secs</p>
+                                    <div class="timer-box font-manrope text-24 line-h36 clr-primary-white d-flex justify-content-center align-items-center"
+                                        id="secs">19</div>
                                 </div>
+                                <div id="combined-time"></div>
                             </div>
                         </div>
                     </div>
@@ -229,10 +233,9 @@
                 <div class="col-lg-5 col-12 d-flex align-items-center flex-column pt-4 pt-lg-0">
                     <div class="blank">
                         <h2 class="fw-semibold text-48 line line-h57 clr-primary-white font-manrope">Tokenomics</h2>
-                        <div class="sclair_parent d-flex align-items-center gap-3">
-                            <p class="fw-normal text-16 line-h36 font-manrope clr-gray mb-0">Baby Sinclair</p>
-                            <span class="fw-normal text-16 line-h36 font-manrope clr-yellow sclair_box">$Clair</span>
-                        </div>
+                        <p class="sclair_parent fw-normal text-24 line-h36 font-manrope clr-gray mb-0">Baby Sinclair
+                            <span class="fw-normal text-16 line-h36 font-manrope clr-yellow sclair_box ms-3">$Clair</span>
+                        </p>
                         <p class="text-16 line-h36 font-manrope fw-medium  clr-gray mb-0 pb-1">Total Tokens</p>
                         <p class="text-40 line-h48 fw-semibold font-manrope clr-yellow mb-32">100,000,000,000</p>
                         <div class="d-flex flex-column gap-12">
@@ -307,14 +310,14 @@
     <section class="bg-image-2 position-relative" id="audit">
         <div class="blank"><img src="./assets/images/png/layer-bgunion.png" alt="union" class="w-100"></div>
         <div class="container_1140">
-            <div class="row d-flex justify-content-center justify-content-lg-between py_77_84">
-                <div class="col-lg-4 col-12 d-flex justify-content-lg-end justify-content-center">
+            <div class="row d-flex justify-content-center py_77_84">
+                <div class="col-lg-5 col-12 d-flex justify-content-lg-end justify-content-center">
                     <div class="blank">
                         <img src="./assets/images/png/lock-image.png" alt="lock" class="w-100">
                     </div>
                 </div>
-                <div class="col-lg-6 col-12 d-flex justify-content-center align-items-center flex-column pt-4 pt-lg-0">
-                    <div class="blank d-flex flex-column align-items-center align-items-lg-start">
+                <div class="col-lg-6 col-12 d-flex justify-content-lg-end justify-content-center pt-4 pt-lg-0">
+                    <div class="blank">
                         <p class="fw-normaln font-manrope text-20 line-h30 clr-gray mb-0 pb-10">Rest easy knowing that
                             $CLAIR is</p>
                         <h4 class="text-32 line-h48 clr-yellow font-manrope mb-0 pb-10">Fully Audited and 100% Secure.
@@ -371,8 +374,8 @@
         <div class="position-absolute pos_roadmap_colorFullImg w-100">
             <img class="w-100 display_none" src="./assets/images/png/timelineimage.png" alt="roadmap-img">
         </div>
-        <div class="container_1140">
-            <h2 class="ff_manrope fw-semibold text-48  line-h57 clr-primary-white text-center mb-4">Roadmap</h2>
+        <div class="container_1140 py_64_100">
+            <h2 class="font-manrope fw-semibold text-48  line-h57 clr-primary-white text-center mb-4">Roadmap</h2>
             <div class="d-flex gap_90 gap_20 flex_wrap justify_center">
                 <div class="position_absolute pos_box1">
                     <div class="roadmap_box paading_box">
@@ -625,7 +628,7 @@
                     <li><a class="font-manrope fw-medium text-16 line-h24 clr-primary-gray position-relative bt_line1"
                             href="#whitepaper">White Paper</a></li>
                     <li><a class="font-manrope fw-medium text-16 line-h24 clr-primary-gray position-relative bt_line1"
-                            href="#privacyt">Privacyt</a></li>
+                            href="#privacyt">Privacy</a></li>
                     <li><a class="font-manrope fw-medium text-16 line-h24 clr-primary-gray position-relative bt_line1"
                             href="#cookies">Cookies</a></li>
                     <li><a class="font-manrope fw-medium text-16 line-h24 clr-primary-gray position-relative bt_line1"

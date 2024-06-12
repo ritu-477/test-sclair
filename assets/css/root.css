@@ -11,7 +11,7 @@
     /* font-color */
     --fc-bodyclr: #000000;
     --fc-primary-white: #f1f1f1;
-    --nav-bg: #0b0f13;
+    --nav-bg: #f1f1f105;
     --nav-border: #292a2c;
     --fc-gray: #c1c1c1;
     --fc-yellow: #fff624;
@@ -29,9 +29,10 @@
     --slider-bg: #262617;
     --footer-border: #353307;
     --clr-white: #FFFFFF;
-    --accordion-item-bg: #272717;
-    --accordion-border: #5b5b4f;
+    --accordion-item-bg: #ffffff14;
+    --accordion-border: #ffffff3d;
     --roadmap-box: #1A1A14;
+    --timer-box:#FFF62433;
 }
 
 .text-60 {
@@ -81,11 +82,9 @@
 
 .clr-bodybg {
     background: var(--fc-bodyclr);
+    
 }
 
-.nav-bg {
-    background-color: var(--nav-bg);
-}
 
 .clr-gray {
     color: var(--fc-gray);

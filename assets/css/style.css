@@ -70,7 +70,7 @@
 
 .nav-bg {
     background-color: var(--nav-bg);
-    backdrop-filter: blur(-12px);
+    backdrop-filter: blur(10px);
 }
 
 .py_26 {

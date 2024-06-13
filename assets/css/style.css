@@ -69,7 +69,8 @@
 }
 
 .nav-bg {
-    background-color: transparent var(--nav-bg);
+    background-color: var(--nav-bg);
+    backdrop-filter: blur(-12px);
 }
 
 .py_26 {
@@ -188,9 +189,9 @@ header h1 {
     border-radius: 20px;
 }
 
-.py_100 {
-    padding-top: 48px;
-    padding-bottom: 48px;
+.py_100_50 {
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .gap_14px {
@@ -224,6 +225,7 @@ header h1 {
     padding-left: 7px;
     padding-right: 7px;
 }
+
 .sliddr_range {
     appearance: none;
     outline: none;
@@ -246,15 +248,18 @@ header h1 {
     cursor: pointer;
     transition: 0.5s;
 }
-.timer-box{
+
+.timer-box {
     width: 50px;
     height: 40px;
     background: var(--timer-box);
     border-radius: 4px;
 }
-#combined-time {
+
+#combinedtime {
     display: none;
 }
+
 /* ...............................section3 about */
 .max_856 {
     max-width: 856px;
@@ -281,6 +286,11 @@ header h1 {
 .timimg-svg {
     width: 24px;
     height: 24px;
+}
+
+.py_50 {
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 /* .................section-4.......................... */
@@ -342,7 +352,7 @@ header h1 {
 /* ..............tokenomics............... */
 
 .py-124_33 {
-    padding-top: 35px;
+    padding-top: 15px;
     padding-bottom: 33px;
 }
 
@@ -365,7 +375,6 @@ header h1 {
     background: var(--shiba-box);
     padding: 20px 30px;
     margin-top: 27px;
-    margin-bottom: 30px;
     border-radius: 16px;
     border: 1px solid var(--shiba-box-border);
 }
@@ -445,8 +454,8 @@ header h1 {
 }
 
 .py_49_115 {
-    padding-top: 49px;
-    padding-bottom: 48px;
+    padding-top: 48px;
+    padding-bottom: 40px;
 }
 
 /* ......................roadmap................................ */
@@ -457,7 +466,6 @@ header h1 {
 .roadmap_bg_img {
     background-image: url("../images/png/Roadmap-bg.png");
     background-size: 100% 100%;
-    height: 1103px;
 }
 
 .roadmap_box {
@@ -494,12 +502,17 @@ header h1 {
 }
 
 .pos_roadmap_colorFullImg {
-    top: 37%;
+    top: 46%;
 }
 
 .pos_yellowGreenBlub {
     right: 44%;
     bottom: -48px;
+}
+
+.py_64_100 {
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .py-71-178 {
@@ -591,8 +604,8 @@ header h1 {
 }
 
 .py_177 {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 95px;
+    padding-bottom: 80px;
 }
 
 /* ...........................our-socials...................... */
@@ -632,7 +645,7 @@ header h1 {
 
 .py_124_120 {
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 40px;
 }
 
 .ellips2 {
@@ -654,7 +667,7 @@ header h1 {
 .footertext {
     max-width: 621px;
     padding-top: 20px;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
 }
 
 .footerborder {
@@ -732,7 +745,7 @@ header h1 {
         z-index: 30;
         left: -100%;
         transition: all 500ms linear;
-        background-color: var(--nav-bg);
+        background-color: var(--nav-menu);
     }
 
     .overflowhidden {
@@ -776,12 +789,6 @@ header h1 {
     }
 }
 
-@media(min-width:644px) and (max-width:991.98px) {
-    .roadmap_bg_img {
-        height: 850px;
-    }
-}
-
 @media(max-width:575.99px) {
     .cartoon-circle {
         width: 80px;
@@ -802,9 +809,9 @@ header h1 {
         padding-top: 60px;
     }
 
-    .py_100 {
+    .py_100_50 {
         padding-top: 60px;
-        padding-bottom: 60px;
+        padding-bottom: 50px;
     }
 
     .py-86 {
@@ -831,12 +838,12 @@ header h1 {
     }
 
     .py_77_84 {
-        padding-top: 90px;
+        padding-top: 120px;
         padding-bottom: 60px;
     }
 
     .py_49_115 {
-        padding-top: 49px;
+        padding-top: 48px;
         padding-bottom: 77px;
     }
 
@@ -873,6 +880,15 @@ header h1 {
     .mb-32 {
         margin-bottom: 32px;
     }
+
+    .footertext {
+        padding-bottom: 50px;
+    }
+
+    .py_50 {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
 }
 
 @media(min-width:768px) {
@@ -884,9 +900,8 @@ header h1 {
         line-height: 67px;
     }
 
-    .py_100 {
+    .py_100_50 {
         padding-top: 70px;
-        padding-bottom: 70px;
     }
 
     .py-86 {
@@ -926,10 +941,11 @@ header h1 {
         padding-top: 26px;
         padding-bottom: 26px;
     }
-         .py_64_100 {
-             padding-top: 50px;
-             padding-bottom: 70px;
-         }
+
+    .py_64_100 {
+        padding-top: 50px;
+        padding-bottom: 70px;
+    }
 }
 
 @media(min-width:992px) {
@@ -945,9 +961,8 @@ header h1 {
         line-height: 52px;
     }
 
-    .py_100 {
+    .py_100_50 {
         padding-top: 100px;
-        padding-bottom: 100px;
     }
 
     .text_nowrap {
@@ -986,17 +1001,17 @@ header h1 {
     }
 
     .pos_box1 {
-        top: 25%;
+        top: 37%;
         left: 3%;
     }
 
     .pos_box2 {
-        top: 178px;
+        top: 295px;
         left: 35%;
     }
 
     .pos_box3 {
-        top: 9%;
+        top: 18%;
         right: 8%;
     }
 
@@ -1022,10 +1037,15 @@ header h1 {
         padding-top: 124px;
         padding-bottom: 120px;
     }
-        .py_64_100{
-            padding-top: 64px;
-            padding-bottom: 100px;
-        }
+
+    .py_64_100 {
+        padding-top: 64px;
+        padding-bottom: 100px;
+    }
+
+    .roadmap_bg_img {
+        height: 1103px;
+    }
 }
 
 @media (min-width:1200px) {
@@ -1034,22 +1054,22 @@ header h1 {
     }
 
     .pos_box1 {
-        top: 25%;
+        top: 37%;
         left: 12%;
     }
 
     .pos_box2 {
-        top: 178px;
+        top: 295px;
         left: 41%;
     }
 
     .pos_box3 {
-        top: 9%;
+        top: 18%;
         right: 5%;
     }
 
     .pos_roadmap_colorFullImg {
-        top: 29%;
+        top: 40%;
     }
 }
 

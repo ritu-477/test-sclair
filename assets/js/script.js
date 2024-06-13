@@ -35,7 +35,7 @@ $('.responsive_2').slick({
 
 var slider = document.getElementById("#range-slider");
 var output = document.getElementById("demo");
-output.innerHTML = slider.value; 
+output.innerHTML = slider.value;
 
 slider.oninput = function () {
     output.innerHTML = this.value;
@@ -50,37 +50,6 @@ slider.oninput = function () {
 
 };
 // // timer//
-// function countdown(endDate) {
-//     //  current date and time
-//     const now = new Date().getTime();
-
-//     //difference between the end date and the current date
-//     const difference = endDate - now;
-
-//     const days = Math.floor(difference / (1000 * 60 * 60 * 24));
-//     const hours = Math.floor(
-//         (difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-//     );
-//     const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
-//     const seconds = Math.floor((difference % (1000 * 60)) / 1000);
-
-//     return {
-//         days,
-//         hours,
-//         minutes,
-//         seconds,
-//     };
-// }
-
-
-// const endDate = new Date("2024-05-01").getTime();
-// setInterval(function () {
-//     const remainingTime = countdown(endDate);
-//     document.querySelector(
-//         ".timer"
-//     ).innerHTML = `${remainingTime.days}: ${remainingTime.hours}: ${remainingTime.minutes}: ${remainingTime.seconds}`;
-// }, 1000);
-
 function getTime() {
     // Get the values from each div
     const days = document.getElementById("days").textContent;
@@ -92,7 +61,7 @@ function getTime() {
     const combinedTime = `${days}:${hours}:${mins}:${secs}`;
 
     // Display the combined time in the "combined-time" div
-    document.getElementById("combined-time").textContent = combinedTime;
+    document.getElementById("combinedtime").textContent = combinedTime;
 }
 
 // Function to start a countdown    

@@ -32,7 +32,8 @@
     --accordion-item-bg: #ffffff14;
     --accordion-border: #ffffff3d;
     --roadmap-box: #1A1A14;
-    --timer-box:#FFF62433;
+    --timer-box: #FFF62433;
+    --nav-menu: #0b0f13;
 }
 
 .text-60 {
@@ -82,7 +83,7 @@
 
 .clr-bodybg {
     background: var(--fc-bodyclr);
-    
+
 }
 
 
